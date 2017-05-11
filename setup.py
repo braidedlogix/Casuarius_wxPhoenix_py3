@@ -42,19 +42,18 @@ cysw_module = Extension(
         'cysw_support.cc',
     ],
     language="c++",
-    include_dirs=['.', 'cassowary']
-)
+    include_dirs=['.', 'cassowary'])
 
 setup(
-    name = 'casuarius',
-    version = '1.1',
-    author = 'Robert Kern',
-    author_email = 'rkern@enthought.com',
-    description = 'Cython bindings for the Cassowary constraint solver.',
-    long_description = long_description,
-    url = 'https://github.com/enthought/casuarius',
-    ext_modules = [cysw_module],
-    classifiers = [
+    name='casuarius',
+    version='1.1',
+    author='Robert Kern',
+    author_email='rkern@enthought.com',
+    description='Cython bindings for the Cassowary constraint solver.',
+    long_description=long_description,
+    url='https://github.com/enthought/casuarius',
+    ext_modules=[cysw_module],
+    classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
@@ -63,5 +62,4 @@ setup(
         "Programming Language :: Python",
         "Topic :: Software Development :: User Interfaces",
     ],
-    cmdclass = cmdclass,
-)
+    cmdclass=cmdclass, )
